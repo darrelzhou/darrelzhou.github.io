@@ -198,20 +198,6 @@ body{
 }
 .section-divider::after{display:none}
 
-/* ===== Highlights ===== */
-.highlights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.highlight-card{
-  background:#fff;border:3px solid #000;border-radius:var(--radius);padding:26px 20px;text-align:center;
-  box-shadow:var(--shadow-hard);transition:all var(--transition);
-}
-.highlight-card:hover{transform:translate(-2px,-2px);box-shadow:var(--shadow-hard-lg)}
-.highlight-card .num{
-  font-family:"Archivo Black","Space Grotesk",sans-serif;font-size:1.8rem;font-weight:900;
-  color:#000;line-height:1.2;letter-spacing:-.02em;
-}
-.highlight-card .label{font-size:.82rem;color:#000;font-weight:800;margin-top:4px}
-.highlight-card .desc{font-size:.75rem;color:#555;margin-top:6px}
-
 /* ===== Tabs ===== */
 .tabs{
   display:flex;gap:0;padding:0;
@@ -377,11 +363,11 @@ body{
   .hero .subtitle{color:#333!important}
   .section{padding:24px 0!important}
   .band{background:#fff!important}
-  .card,.project-card,.edu-card,.highlight-card,.honor-card,.skill-card-2x2{
+  .card,.project-card,.edu-card,.honor-card,.skill-card-2x2{
     background:#fff!important;box-shadow:none!important;border:1px solid #000!important;
     break-inside:avoid;
   }
-  .card:hover,.project-card:hover,.highlight-card:hover,.honor-card:hover,.skill-card-2x2:hover{transform:none!important}
+  .card:hover,.project-card:hover:hover,.honor-card:hover,.skill-card-2x2:hover{transform:none!important}
   .tab-panel{display:block!important;animation:none!important}
   .tabs{display:none!important}
   @page{margin:1.5cm}
@@ -394,7 +380,6 @@ body{
   .hero{padding:100px 0 48px}
   .section{padding:44px 0}
   .container{padding:0 16px}
-  .highlights-grid{grid-template-columns:repeat(2,1fr)}
   .honors-grid,.projects-grid,.skills-grid{grid-template-columns:1fr}
   .card-header{flex-direction:column}
   .water-hint{display:none}
@@ -413,7 +398,7 @@ body{
   <div class="nav-inner">
     <span class="nav-brand">HX.Zhou</span>
     <div class="nav-links">
-      <a href="#hero">首页</a><a href="#highlights">亮点</a><a href="#honors">荣誉</a>
+      <a href="#hero">首页</a><a href="#honors">荣誉</a>
       <a href="#experience">经历</a><a href="#projects">项目</a>
       <a href="#skills">技能</a><a href="#soft-skills">素养</a><a href="#education">教育</a>
     </div>
@@ -443,19 +428,6 @@ body{
     </div>
   </div>
   <div class="water-hint" id="waterHint">轻点水面 · 激起涟漪</div>
-</section>
-
-<!-- ===== 亮点成果 ===== -->
-<section class="section" id="highlights">
-  <div class="container">
-    <div class="section-header"><h2>亮点成果</h2><div class="section-divider"></div></div>
-    <div class="highlights-grid">
-      <div class="highlight-card"><div class="num">NOI</div><div class="label">全国赛铜牌</div><div class="desc">NOI 2024 D类铜牌</div></div>
-      <div class="highlight-card"><div class="num">2&times;</div><div class="label">省一等奖</div><div class="desc">NOIP 2023 &amp; 2024</div></div>
-      <div class="highlight-card"><div class="num">金牌</div><div class="label">省赛金牌</div><div class="desc">湖南省大学生程序设计竞赛</div></div>
-      <div class="highlight-card"><div class="num">唯一一等奖</div><div class="label">智慧交通项目</div><div class="desc">20+ 团队中脱颖而出</div></div>
-    </div>
-  </div>
 </section>
 
 <!-- ===== 荣誉与获奖 ===== -->
@@ -489,6 +461,13 @@ body{
           <h4>阿里巴巴人工智能训练师（高级）</h4>
           <div class="honor-level">认证证书</div>
           <div class="honor-detail">具备数据标注、模型调优与提示词工程相关能力</div>
+        </div>
+      </div>
+      <div class="honor-card">
+        <div class="honor-info">
+          <h4>智慧交通项目</h4>
+          <div class="honor-level">唯一一等奖</div>
+          <div class="honor-detail">20+ 团队中脱颖而出</div>
         </div>
       </div>
     </div>
